@@ -1,0 +1,17 @@
+<tr>
+  <td>
+    <%= cart_item.product.uuid %>
+  </td>
+  <td>
+    <%= cart_item.product.name %>
+  </td>
+  <td>
+    <%= cart_item.qty %>
+  </td>
+  <td>
+    <%= Money.new(cart_item.price_in_cents).format %>
+  </td>
+  <td>
+    <%= Money.new(cart_item.sub_total_in_cents).format %>
+  </td>
+</tr>

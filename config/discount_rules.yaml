@@ -1,0 +1,12 @@
+-
+  cents: 2000
+  text: "10% off on total greater than $20"
+  discount: 0.10
+-
+  cents: 5000
+  text: "15% off on total greater than $50"
+  discount: 0.15
+-
+  cents: 10000
+  text: "20% off on total greater than $100"
+  discount: 0.2

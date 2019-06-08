@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <th>UUID</th>
+    <th>Name</th>
+    <th>Qty</th>
+    <th>Unit Price</th>
+    <th>Sub Total</th>
+  </thead>
+  <tbody>
+    <%= render @cart_items %>
+  </tbody>
+</table>
+
+<% if @discounted_total.discounted_text.present? %>
+  <p><%= @discounted_total.discounted_text %></p>
+<% end %>
+
+<% if @discounted_total.discounted_total_in_cents.present? %>
+  <p><%= Money.new(@discounted_total.discounted_total_in_cents).format %></p>
+<% end %>

@@ -1,0 +1,1 @@
+DISCOUNT_RULES = YAML.load_file(Rails.root.join('config/discount_rules.yaml')).sort { |r| r['cents'] }.freeze

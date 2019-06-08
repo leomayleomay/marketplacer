@@ -1,0 +1,13 @@
+<table>
+  <thead>
+    <th>UUID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <%= render @products %>
+  </tbody>
+</table>
+
+<%= will_paginate @products %>
